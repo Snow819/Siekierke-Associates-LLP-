@@ -460,6 +460,10 @@ header {
     font-weight: bold;
 }
 
+.contact-icon div {
+    color: #fff;
+}
+
 .contact-form {
     background: var(--white);
     padding: 2.5rem;
