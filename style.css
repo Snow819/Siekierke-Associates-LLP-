@@ -330,6 +330,11 @@ header {
 }
 
 /* Founder */
+.founder-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
 .founder-card {
     display: flex;
     flex-direction: column;
@@ -644,6 +649,11 @@ footer {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .founder-wrapper {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .founder-card {
