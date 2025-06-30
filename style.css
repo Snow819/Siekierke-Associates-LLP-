@@ -249,10 +249,15 @@ header {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
+}
+
+.about-text,
+.about-image {
+    width: 50%;
 }
 
 .about-text h2 {
@@ -269,11 +274,21 @@ header {
     line-height: 28.8px;
 }
 
+.about-image {
+    background: linear-gradient(45deg, var(--navy-blue), var(--light-navy));
+    border-radius: 15px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 4rem;
+}
+
 .about-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 .stat {
@@ -296,16 +311,6 @@ header {
     margin-top: 8px;
 }
 
-.about-image {
-    background: linear-gradient(45deg, var(--navy-blue), var(--light-navy));
-    border-radius: 15px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 4rem;
-}
 
 .team {
     padding: 100px 0;
@@ -408,9 +413,15 @@ header {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 4rem;
+}
+
+.contact-info,
+.contact-form {
+    width: 50%;
 }
 
 .contact-info h2 {
@@ -502,10 +513,8 @@ header {
 
 footer {
     background-color: #1a237e;
-    /* Navy blue */
     color: #ffffff;
     padding: 60px 20px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-content {
@@ -520,7 +529,7 @@ footer {
 }
 
 .footer-section {
-    flex: 1 1 250px;
+    flex: 1 1 200px;
 }
 
 .footer-section h3 {
@@ -611,17 +620,26 @@ footer {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .about-stats {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .services-grid {
