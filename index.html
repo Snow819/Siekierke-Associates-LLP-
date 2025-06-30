@@ -4,6 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Siekierke & Associates, LLP is a trusted law firm offering expert legal services in corporate, family, property, and criminal law.">
+  <meta name="keywords" content="Siekierke & Associates, LLP, law firm, legal services, corporate law, family law, property law, litigation, Nigeria lawyers">
+  <meta name="author" content="Siekierke & Associates, LLP">
+  
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Siekierke & Associates, LLP ⚖️" />
+  <meta property="og:description" content="A reputable law firm delivering personalized and professional legal solutions." />
+  <meta property="og:url" content="https://siekierke-associates-llp.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://siekierke-associates-llp.vercel.app/asset/firm.jpeg" /> <!-- Optional: add full URL to your logo -->
+  
+  <!-- Twitter card support (optional) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Siekierke & Associates, LLP ⚖️" />
+  <meta name="twitter:description" content="Offering expert legal services with a focus on client success." />
+  <meta name="twitter:image" content="https://siekierke-associates-llp.vercel.app/asset/firm.jpeg" />
     <title>Siekierke & Associates, LLP ⚖️</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
@@ -330,6 +346,10 @@
                         <textarea placeholder="Describe your legal matter..." name="legal matter" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
+
+                    <!--redirect to thank you page -->
+                    <input type="hidden" name="_next" value="https://siekierke-associates-llp.vercel.app/thankyou.html">
+
                 </form>
             </div>
         </div>
