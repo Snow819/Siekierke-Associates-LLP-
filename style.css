@@ -62,7 +62,7 @@ header {
 }
 
 .navlinks a {
-    color: var(--navy-blue);
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
